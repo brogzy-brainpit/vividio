@@ -32,8 +32,8 @@ export default function Home() {
 
     </AnimatePresence>
     <SmoothScroll>
-   <Landing/>
-   <Images/>
+   {/* <Landing/>
+   <Images/> */}
     {/* <div className="h-[50vh]"></div> */}
     <Custom/>
     <Texter/>

@@ -28,7 +28,7 @@ export default function Home() {
   return (
    <div className="relativ">
     <AnimatePresence mode="wait">
-    {/* {isLoading &&< Preloader/>} */}
+    {isLoading &&< Preloader/>}
 
     </AnimatePresence>
     <SmoothScroll>

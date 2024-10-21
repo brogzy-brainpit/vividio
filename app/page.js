@@ -17,14 +17,14 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const [isLoading,setIsLoading]=useState(true)
 
-  // useEffect(()=>{
+  useEffect(()=>{
 
-  //   setTimeout(() => {
-  //     setIsLoading(false)
-  //   document.body.style.cursor="default"
-  //   window.scrollTo({top:0})
-  //   }, 2100);
-  // },[])
+    setTimeout(() => {
+      setIsLoading(false)
+    document.body.style.cursor="default"
+    window.scrollTo({top:0})
+    }, 2100);
+  },[])
   return (
    <div className="relativ">
     <AnimatePresence mode="wait">

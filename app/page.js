@@ -29,11 +29,11 @@ export default function Home() {
    <div className="relativ">
     <AnimatePresence mode="wait">
     {isLoading &&< Preloader/>}
-
+ 
     </AnimatePresence>
     <SmoothScroll>
    <Landing/>
-   <Images/>
+   {/* <Images/> */}
     {/* <div className="h-[50vh]"></div> */}
     <Custom/>
     <Texter/>

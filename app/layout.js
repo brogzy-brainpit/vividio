@@ -24,6 +24,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+      {/* <style>
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Danfo&family=Ultra&display=swap');
+</style> */}
         <Nav/>
         {children}
       </body>

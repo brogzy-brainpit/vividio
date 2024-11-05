@@ -40,10 +40,10 @@ function HorizontalParallax() {
 }
  const Horz=({color,pictures,x},i)=>{
     return (
-        <motion.div key={i} style={{x}} className=' pointer-events-none flex w-[100%] h-[30vh] gap-[1vw]  '>
+        <motion.div key={i} style={{x}} className='pointer-events-none flex w-[100%] h-[30vh] gap-[1vw]  '>
             {pictures.map(({color,img},index)=>{
                 return (
-                    <div key={index} className=' pb-[66.66% w-[50%] p-[20px  flex items-center justify-center'  style={{backgroundColor:color}} >
+                    <div key={index} className=' w-[50%] p-[20px  flex items-center justify-center'  style={{backgroundColor:color}} >
                         <div className='w-[90%] h-[90%] relative'>
                         <Image alt="image" src={img} className='object-cover' fill={true}/>
                         </div>

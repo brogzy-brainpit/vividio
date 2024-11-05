@@ -18,6 +18,45 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.ultra-regular {
+  font-family: "Ultra", serif;
+  font-weight: 400;
+  font-style: normal;
+} 
+.broken-text {
+  font-size: 5rem;
+  position: relative;
+  background: linear-gradient(45deg, #f06, yellow);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: crack 2s forwards;
+}
+
+@keyframes crack {
+  0% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  50% {
+    clip-path: polygon(0 0, 80% 10%, 100% 100%, 20% 90%);
+  }
+  100% {
+    clip-path: polygon(10% 10%, 90% 0%, 100% 100%, 0% 90%);
+  }
+}
+@font-face {
+  font-family: 'ConthraxBold';
+  src: url('./fonts/Fontspring-DEMO-conthrax-bd.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BriceBold';
+  src: url('./fonts/Fontspring-DEMO-brice-boldexpanded.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @media (max-width: 1023px) {
   .breaker{
     display: flex;
@@ -33,9 +72,11 @@
   }
   
 }
-@import url('https://fonts.cdnfonts.com/css/formular');
+@import url('https://fonts.cdnfonts.com/css/formular'); 
 @import url('https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Danfo&family=Ultra&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -104,6 +145,8 @@ body {
       display: block;
       width: 40%;
       background-color: white;
+      background-color: black;
+      cursor: pointer;
       height: 1px;
       margin:auto;
   position: relative;
@@ -569,3 +612,5 @@ body {
   border-color: initial;
   border-image: initial;
 } */
+
+

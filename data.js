@@ -6,6 +6,8 @@ import floating5 from './public/images/floating_5.jpg';
 import floating6 from './public/images/floating_6.jpg';
 import floating7 from './public/images/floating_7.jpg';
 import floating8 from './public/images/floating_8.jpg';
+import ele from './public/images/ele.jpg';
+import free from './public/images/free.jpg';
 
 
 export { 
@@ -16,5 +18,7 @@ export {
     floating5, 
     floating6, 
     floating7, 
-    floating8
+    floating8,
+    free,
+    ele,
 }

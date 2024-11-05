@@ -10,6 +10,7 @@ import {
   
 } from '../data'
 import Image from 'next/image'
+import SlideUpText from '@/effects/SlideUpText'
 function OurExpertise() {
     const horzRef= useRef(null)
     const textRef= useRef(null)
@@ -39,7 +40,6 @@ alert("am out!!!")
         initial:{y:"100%"},
     enter:(index)=>({y:"0",transition:{duration:0.5,delay:0.01*index}}),
     exit:{y:"100%"}}
-    let para="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum consequatur voluptatem et harum voluptates mollitia delectus accusantium consequuntur eveniet saepe, ratione eius repellendus, est id rerum iure officiis voluptatibus. Vitae libero voluptas excepturi totam ullam sequi! Perferendis dolore eos, qui quas quasi eligendi ut asperiores quaerat itaque expedita magni magnam inventore minus placeat facere quos exercitationem nisi eum rerum impedit, autem non sequi voluptate. Perferendis veritatis repudiandae voluptatem dicta qui!"
   return (
     <section ref={horzRef} className='bg-red-10 flex h-scree'>
         <div className='container breaker  w-full min-h-screen'>
@@ -63,14 +63,16 @@ alert("am out!!!")
         <motion.h1 style={{opacity:textOpacity}} className='text-emerald-400 text-heading font-bold capitalize'>our expertise</motion.h1>
    
     </span>
-    <p ref={textRef} className=' flex-wrap w-0%] text-para leading-[1] m-0 flex gap-2 bg-slate-40'>
-        {para.split(" ").map((p,index)=>{
+
+    <SlideUpText  className={`relativ text-par flex-nowrap   inline-flex overflow-hidden  text-para   leading-[1] font-custom1`}  text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum consequatur voluptatem et harum voluptates mollitia delectus accusantium consequuntur eveniet saepe, ratione eius repellendus, est id rerum iure officiis voluptatibus. Vitae libero voluptas excepturi totam ullam sequi! Perferendis dolore eos, qui quas quasi eligendi ut asperiores quaerat itaque expedita magni magnam inventore minus placeat facere quos exercitationem nisi eum rerum impedit, autem non sequi voluptate. Perferendis veritatis repudiandae voluptatem dicta qui!"}/>
+    {/* <p ref={textRef} className=' flex-wrap w-0%] text-para leading-[1] m-0 flex gap-2 bg-slate-40'>
+        {"goo boy".split(" ").map((p,index)=>{
         return <span className=' relativ inline-flex overflow-hidden' >
 
             <motion.span custom={index} variants={slideUp}  initial="initial" animate={inView?"enter":"exit"} exit="exit"  className=''>{p}</motion.span >
         </span>
     })}
-    </p>
+    </p> */}
      <button className='btn btn-primary'>test btn</button>
 </div>
 </div>

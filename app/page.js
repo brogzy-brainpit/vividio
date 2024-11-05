@@ -6,9 +6,12 @@ import Gallery from "@/components/Gallery";
 import HorizontalParallax from "@/components/HorizontalParallax";
 import Images from "@/components/Images";
 import Landing from "@/components/Landing";
+import Landing2 from "@/components/Landing2";
+import Landing3 from "@/components/Landing3";
 import OurExpertise from "@/components/OurExpertise";
 import Preloader from "@/components/Preloader";
 import Texter from "@/components/Texter";
+import TwoImages from "@/components/TwoImages";
 import SmoothScroll from "@/effects/SmoothScroll";
 import { AnimatePresence } from "framer-motion";
 import Image from "next/image";
@@ -17,25 +20,27 @@ import { useEffect, useState } from "react";
 export default function Home() {
   const [isLoading,setIsLoading]=useState(true)
 
-  useEffect(()=>{
+  // useEffect(()=>{
 
-    setTimeout(() => {
-      setIsLoading(false)
-    document.body.style.cursor="default"
-    window.scrollTo({top:0})
-    }, 2100);
-  },[])
+  //   setTimeout(() => {
+  //     setIsLoading(false)
+  //   document.body.style.cursor="default"
+  //   window.scrollTo({top:0})
+  //   }, 2100);
+  // },[])
   return (
    <div className="relativ">
     <AnimatePresence mode="wait">
-    {isLoading &&< Preloader/>}
+    {/* {isLoading &&< Preloader/>} */}
  
     </AnimatePresence>
     <SmoothScroll>
-   <Landing/>
+   {/* <Landing/> */}
+   <Landing3/>
+    <Custom/>
+   <TwoImages/>
    {/* <Images/> */}
     {/* <div className="h-[50vh]"></div> */}
-    <Custom/>
     <Texter/>
     <OurExpertise/>
     <Gallery/>
@@ -47,3 +52,11 @@ export default function Home() {
    </div>
   );
 }
+
+
+
+
+
+
+
+

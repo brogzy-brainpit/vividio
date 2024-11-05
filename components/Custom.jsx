@@ -1,11 +1,12 @@
+import SlideUpText from '@/effects/SlideUpText'
 import React from 'react'
 
 function Custom() {
   return (
     <div className=' container my-[120px] '>
-    <h2 className='md:text-[96px] text-[10vw] leading-[1]  capitalize'>
-  our services
-    </h2>
+      <SlideUpText  className={`relativ text-par  inline-flex overflow-hidden  text-[56px] md:text-[96px]  leading-[1] text-customColor font-custom2`} text={"our services"} fontSize={96} clamp={false}/>
+
+
     <div className='flex flex-col  justify-between w-full my-5 capitalize'>
        
     <div className='flex justify-between sm:flex-row flex-col'>

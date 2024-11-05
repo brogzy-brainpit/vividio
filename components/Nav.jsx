@@ -40,7 +40,7 @@ function Nav() {
        })} */}
      </p>
      <Magnetic className="z-50">
-     <div className='bg-slate-400 rounded-full z-50 w-[60px] h-[60px] flex justify-center items-center' onClick={()=>{setBurgerMenu(!burgerMenu)}} >
+     <div className='bg-white rounded-full z-50 w-[60px] h-[60px] flex justify-center items-center' onClick={()=>{setBurgerMenu(!burgerMenu)}} >
         <div className={`burger-menu ${burgerMenu?"burgerActive":null}`}>
         </div>
 

@@ -20,8 +20,8 @@ function Footer() {
     <motion.div ref={footer} style={{y}} className='py-4 z-[-100] relative h-[5 bg-[#121212] '>
        <div className='container flex-col flex justify-between w-full h-full  items-end'>
 <div className='py-[80px] flex justify-end'>
-    <h2 className='text-[5vw] capitalize font-custom2 text-customColor'>
-        its over, let's talk.
+    <h2 className='text-[5vw] capitalize font-custom text-customColor'>
+        its over, lets talk.
     </h2>
 </div>
 

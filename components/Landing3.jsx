@@ -59,11 +59,11 @@ function Landing3() {
     
   </div>
   <div className='relative w-full breaker-child flex justify-center '>
-     <Magnetic className="flex justify-center">
+     {/* <Magnetic className="flex justify-center">
+     </Magnetic> */}
     <div className='w-[60%] flex justify-center overflow-hidden rounded-[20px]'>
       <Image  src={ele} className='object-cover' />
     </div>
-     </Magnetic>
   </div>
   <div className=' bg-slate-80 w-full breaker-child flex items-end'>
     <div>

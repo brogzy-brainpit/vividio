@@ -26,8 +26,8 @@ module.exports = {
       },
       fontSize:{
         'regular': 'clamp(20px, 4vw, 24px)',
-        // 'heading': 'clamp(32px, 5vw, 50px)',
-        'heading': 'clamp(42px, 6vw, 70px)',
+        'heading2': 'clamp(32px, 5vw, 50px)',
+        'heading': 'clamp(40px, 8vw, 130px)',
         'para': 'clamp(16px, 1vw, 28px)',
       },
       fontFamily:{
@@ -43,5 +43,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/typography",require("daisyui"))
+  ],
 };

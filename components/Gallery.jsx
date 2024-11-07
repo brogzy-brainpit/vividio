@@ -29,22 +29,28 @@ function HorizontalParallax() {
         {img:"https://images.pexels.com/photos/157675/fashion-men-s-individuality-black-and-white-157675.jpeg?auto=compress&cs=tinysrgb&w=800",color:"#c4fcef"},
     ]
     const AllProject=[
-        {title:" project levi",
+        {title:" snap kitchen",
             viniette:"https://images.pexels.com/photos/157675/fashion-men-s-individuality-black-and-white-157675.jpeg?auto=compress&cs=tinysrgb&w=800"
             },
-            {title:"sun de vou",
+            {title:"girls scout",
                 viniette:"https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&w=600"
                 },
-                {title:"itis de leon",
+                {title:"pine cove",
                     viniette:"https://images.pexels.com/photos/1216544/pexels-photo-1216544.jpeg?auto=compress&cs=tinysrgb&w=600"
                     },
+                    {title:"dolls kill",
+                        viniette:"https://images.pexels.com/photos/1216544/pexels-photo-1216544.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        },
+                        {title:"kindred",
+                            viniette:"https://images.pexels.com/photos/1216544/pexels-photo-1216544.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            },
         
     ]
   return (
     <div  ref={horzRef} className='my-[4vh] w-full overflow-hidden relative '>
        <div onMouseEnter={()=>{setAttention(true)}} onMouseLeave={()=>{setAttention(false)}} className='h-full w-full bg-red-30 p-[2vw]'>
        {/* <GalleryCursor /> */}
-
+            <h1 className='text-heading2 font-custom'>project i worked on </h1>
         <div className='flex flex-col gap-[1vh]   '>
             {AllProject.map(({title,viniette},index)=>{
                 return (
@@ -67,7 +73,7 @@ function HorizontalParallax() {
  const Project=({title,img,attention},i)=>{
     return (
         <div className='clip-p'>
-     <div key={i} className='bg-slate-20 border-b-emerald-200 border-b py-6 text-regular capitalize'>
+     <div key={i} className='font-custom bg-slate-20 border-b-emerald-200 border-b py-6 text-regular capitalize'>
         {title}
      </div>
         </div>

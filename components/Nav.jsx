@@ -89,14 +89,14 @@ const MobileMenu=({burgerMenu, setBurgerMenu})=>{
     return <motion.div variants={menuSlide} animate={burgerMenu?"enter":"exit"} initial="initial" exit="exit" className=' z-40 pt-[10vh] fixed items-center justify-center w-[100%] top-0 left-0 h-screen bg-black'> 
 <div className='pt-[20px] flex justify-center items-center flex-col  h-full'>
   <Magnetic>
-   <motion.h1 variants={textAnim} animate={burgerMenu?"enter":"exit"} initial="initial" exit="exit" onClick={(e)=>{setBurgerMenu(false)}}  className='text-heading font-bold uppercase heading-hover'>works</motion.h1> 
+   <motion.h1 variants={textAnim} animate={burgerMenu?"enter":"exit"} initial="initial" exit="exit" onClick={(e)=>{setBurgerMenu(false)}}  className='text-heading2 font-bold uppercase heading-hover'>works</motion.h1> 
   </Magnetic>
   <Magnetic>
-   <motion.h1  variants={textAnim} animate={burgerMenu?"enter":"exit"} initial="initial" exit="exit" onClick={(e)=>{setBurgerMenu(false)}} className=' text-heading font-bold uppercase heading-hover'>About</motion.h1> 
+   <motion.h1  variants={textAnim} animate={burgerMenu?"enter":"exit"} initial="initial" exit="exit" onClick={(e)=>{setBurgerMenu(false)}} className=' text-heading2 font-bold uppercase heading-hover'>About</motion.h1> 
   </Magnetic>
   <Magnetic>
 
-   <motion.h1 variants={textAnim} animate={burgerMenu?"enter":"exit"} initial="initial" exit="exit" onClick={(e)=>{setBurgerMenu(false)}} className='text-heading font-bold uppercase heading-hover'>contact</motion.h1> 
+   <motion.h1 variants={textAnim} animate={burgerMenu?"enter":"exit"} initial="initial" exit="exit" onClick={(e)=>{setBurgerMenu(false)}} className='text-heading2 font-bold uppercase heading-hover'>contact</motion.h1> 
   </Magnetic>
 
 <div className='flex pt-10 gap-[3vw]'>

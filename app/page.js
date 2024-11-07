@@ -9,7 +9,10 @@ import Landing from "@/components/Landing";
 import Landing2 from "@/components/Landing2";
 import Landing3 from "@/components/Landing3";
 import OurExpertise from "@/components/OurExpertise";
+import Parallax from "@/components/Parallax";
 import Preloader from "@/components/Preloader";
+import RecentWorks from "@/components/RecentWorks";
+import Services from "@/components/Services";
 import Texter from "@/components/Texter";
 import TwoImages from "@/components/TwoImages";
 import SmoothScroll from "@/effects/SmoothScroll";
@@ -30,19 +33,22 @@ export default function Home() {
   // },[])
   return (
    <div className="relativ">
-    <AnimatePresence mode="wait">
-    {/* {isLoading &&< Preloader/>} */}
+    {/* <AnimatePresence mode="wait">
+    {isLoading &&< Preloader/>}
  
-    </AnimatePresence>
+    </AnimatePresence> */}
     <SmoothScroll>
    {/* <Landing/> */}
    <Landing3/>
+   <Services/>
+   <RecentWorks/>
+   <Parallax/>
     <Custom/>
    <TwoImages/>
    {/* <Images/> */}
     {/* <div className="h-[50vh]"></div> */}
     <Texter/>
-    <OurExpertise/>
+    {/* <OurExpertise/> */}
     <Gallery/>
     <HorizontalParallax/>
     <Footer/>
